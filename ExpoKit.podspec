@@ -42,6 +42,7 @@ Pod::Spec.new do |s|
   end
 
   s.subspec “Payments” do |ss|
+    ss.dependency “ExpoKit/Core”
     ss.dependency ’Stripe’, ‘~> 10.1.0'
     ss.source_files = ‘ios/Exponent/Payments/*.{h.m}’
   end
